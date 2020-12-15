@@ -1,0 +1,129 @@
+$primary : black; //primary
+$secondary : white; //$secondary
+$info : gray;
+$danger : #E2AE22;
+$light : whitesmoke;
+$dark : #FFCF48;
+$jumbotron-bg : black; //jumbotron background
+$display1-size : 5rem;
+$display2-size : 4rem;
+$display3-size : 3rem;
+$display4-size : 2rem;
+$headings-font-family : "Helvetica";
+$spacer: 2rem !default; //margin and padding overall spacing size
+
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../bootstrap-4.5.3/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+body {
+background-image: url("../images/background4.jpg");
+background-size: cover;
+//background-repeat: repeat;
+width: 100%;
+// height: 281vh;
+}
+
+.myBanner {
+  width: 100%;
+  height: 450px;
+}
+
+.myPara {
+  width: 70%;
+}
+
+.phonePuma {
+  // width: 380px;
+  width: 50%;
+}
+
+.pumaHeading {
+  font-size: 80px;
+}
+
+.myImage {
+  width: 100%;
+  height: 300px;
+}
+
+.mySocials {
+  background: white;
+  border-radius: 10px;
+}
+.mySocials:hover {
+  background-color: #AAB6BD;
+  border-radius: 5px;
+}
+
+.paraTwo {
+  color: #FCDE9F;
+}
+
+.myForm {
+  border-radius: 50px;
+}
+
+.modalText {
+  padding: 10px;
+}
+
+.paraModal {
+  font-size: 18px;
+}
+
+//
+// body {
+//   background: #fff;
+//   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//   font-size: 14px;
+//   color: #000;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+}
+
+
+@media (min-width:320px) and (max-width:992px){
+  .phonePuma {
+    // width: 180px;
+    width: 40%;
+  }
+
+  .myinsta {
+    margin-left: 105px;
+  }
+
+  .footer-text {
+    margin-left: 97px;
+  }
+
+}
