@@ -48,6 +48,10 @@ width: 100%;
   width: 70%;
 }
 
+.shoe-title {
+  font-size: 10px;
+}
+
 .phonePuma {
   // width: 380px;
   width: 50%;
@@ -112,18 +116,24 @@ width: 100%;
 }
 
 
-@media (min-width:320px) and (max-width:992px){
-  .phonePuma {
-    // width: 180px;
-    width: 40%;
-  }
+// .footer-two {
+//   float:right;
+//   width: 50%;
+// }
 
-  .myinsta {
-    margin-left: 105px;
-  }
 
-  .footer-text {
-    margin-left: 97px;
-  }
+// @media (min-width:320px) and (max-width:992px){
+//   .phonePuma {
+//     // width: 180px;
+//     width: 40%;
+//   }
 
-}
+//   .myinsta {
+//     margin-left: 105px;
+//   }
+
+//   .footer-text {
+//     margin-left: 97px;
+//   }
+
+// }

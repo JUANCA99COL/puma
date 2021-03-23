@@ -265,10 +265,12 @@ function allShoes(){
             //append will keep  adding to existing content, so clear if you want
             //or else use html to replace existing content
             $('#imageShoe').append('<img class="img-fluid" src="images/' + shoes[i].photo + '" alt="' + shoes[i].categorie + '"/>'+
-            '<h1 class="card-title">'+ shoes[i].categorie + '</h1>' +
-            '<p class="card-text text-danger">Name : ' + ' ' + '<span class="text-primary">' + shoes[i].name + '</span> <br></p>' +
-             '<p class="card-text text-danger">Color : ' + ' ' + '<span class="text-primary">' + shoes[i].color + '</span> <br></p>' +
-             '<p class="card-text text-danger modalText">Description : ' + ' ' + '<span class="text-primary paraModal ">' + shoes[i].description + '</span> <br></p>'
+            '<div class="bg-light text-dark">' + 
+            '<p class="shoe-title text card-title">'+ shoes[i].categorie + '</p>' +
+            '<p class="text card-text text-dark font-weight-bold">Name : ' + ' ' + '<span class=" text-dark font-weight-light">' + shoes[i].name + '</span> <br></p>' +
+             '<p class="text card-text text-dark font-weight-bold">Color : ' + ' ' + '<span class=" text-dark font-weight-light">' + shoes[i].color + '</span> <br></p>' +
+             '<p class="text card-text text-dark font-weight-bold modalText">Description : ' + ' ' + '<span class="fs-6 text-dark font-weight-light paraModal ">' + shoes[i].description + '</span> <br></p>' +
+             '</div>'
 
 
           );
