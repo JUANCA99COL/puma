@@ -7860,12 +7860,9 @@ body {
 
 @media (min-width: 320px) and (max-width: 992px) {
   .phonePuma {
-    width: 40%; }
+    width: 40%;
+  }
 
-  /* .myinsta {
-    margin-left: 105px; } */
+}
 
-  .footer-text {
-    margin-left: 97px; } }
-
-/*# sourceMappingURL=style.css.map */
+  
