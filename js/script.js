@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-
   var swiper = new Swiper('.swiper-container', {
      effect: 'coverflow',
      grabCursor: true,
@@ -18,13 +15,6 @@ $(document).ready(function(){
        el: '.swiper-pagination',
      },
    });
-
-
-
-
-
-
-
 // ==========================================================
 // Declaration of an array of objects
 // ==========================================================
@@ -78,7 +68,7 @@ var shoes = [
         name : 'RS-2K RF',
         color : 'Gold',
         price : '190$',
-        categorie : 'Collection',
+        categorie : 'RS-Collection',
         photo : 'collection-1.jpg',
         description : 'These brand-new RS-2K RF Sneakers are formulated for our ever-evolving world, fusing 2000s influence with a futuristic palette. With its richly layered upper and comfy PU midsole.'
 
@@ -89,7 +79,7 @@ var shoes = [
         name : 'RS-2K THE UNITY COLLECTION',
         color : 'White',
         price : '190$',
-        categorie : 'Collection',
+        categorie : 'RS-Collection',
         photo : 'collection-2.jpg',
         description : 'We are living in the midst of a paradigm shift. Our world is becoming more digital by the second, blurring the line between the artificial and the real.'
 
@@ -100,7 +90,7 @@ var shoes = [
         name : 'RS 2.0 JAPANORAMA',
         color : 'Gray',
         price : '130$',
-        categorie : 'Collection',
+        categorie : 'RS-Collection',
         photo : 'collection-3.jpg',
         description : 'Retro RS sillhouette Mesh upper with suede, nubuck and synthetic leather overlays Full lace closure Lightweight PU midsole for soft cushioning Rubber outsole provides grip and traction PUMA Formstrip overlay at side Japanorama embroidered patch at lateral side RS-0 branded loop at tongue '
 
@@ -111,7 +101,7 @@ var shoes = [
         name : 'PUMA X EMOJI RS-2K',
         color : 'White',
         price : '190$',
-        categorie : 'Collection',
+        categorie : 'RS-Collection',
         photo : 'collection-4.jpg',
         description : 'Retro RS sillhouette Mesh upper with suede, nubuck and synthetic leather overlays Full lace closure Lightweight PU midsole for soft cushioning Rubber outsole provides grip and traction PUMA Formstrip overlay at side Japanorama embroidered patch at lateral side RS-0 branded loop at tongue '
 
@@ -160,25 +150,16 @@ var shoes = [
         description : 'This high-tech training shoe pairs LQDCELL technology with a ProFoam midsole for the lightest stride you have felt yet. Perfect for any agile athlete on the move. '
 
       }
-
-
-
 ];
-
-
-
 
 // ==========================================================
 // Function call to display all items
 // ==========================================================
 
 allShoes(); //displays all items on home page
-
 $('#refresh').click(function(){
   allShoes('animate__animated animate__bounce');
 });
-
-
 
 // ==========================================================
 // Display items as per user's input - breed filter call
@@ -199,7 +180,7 @@ console.log(running, rsColl, lifeStyle);
   }
 
   if (rsColl === 'checked') {
-        inputArray.push('Collection');
+        inputArray.push('RS-Collection');
         console.log(inputArray);
   }
 
@@ -215,8 +196,6 @@ console.log(running, rsColl, lifeStyle);
 
 });//showChoice click function
 
-
-
 // ==========================================================
 // Behaviour filter call
 // ==========================================================
@@ -226,7 +205,6 @@ $('#showSelection').click(function(){
   console.log(color);
   filteredColor(color);
 });
-
 
 // ==========================================================
 // Function to display all items
@@ -241,8 +219,6 @@ function allShoes(){
     cardModal();
   } //end of for loop
   } //end of allCats function
-
-
 
 // ==========================================================
 // Modal
@@ -271,28 +247,13 @@ function allShoes(){
              '<p class="text card-text text-dark font-weight-bold">Color : ' + ' ' + '<span class=" text-dark font-weight-light">' + shoes[i].color + '</span> <br></p>' +
              '<p class="text card-text text-dark font-weight-bold modalText">Description : ' + ' ' + '<span class="fs-6 text-dark font-weight-light paraModal ">' + shoes[i].description + '</span> <br></p>' +
              '</div>'
-
-
           );
-
-
         } //end of if statement
-
-
       }//end of for statement
       console.log(categorie);
       // shoeCarousel(categorie);
-
-
-
-
-
     }); // end of moreDetails click event
-
   } //cardModal
-
-
-
 // ==========================================================
 // Filter by shoe type
 // ==========================================================
@@ -311,9 +272,8 @@ function filteredShoes(shoeCategorie){
   }//for i
 }//filteredCats
 
-
 // ==========================================================
-// Filter by cat behaviour
+// Filter by shoes behaviour
 // ==========================================================
 
 function filteredColor(shoeColor){
@@ -328,12 +288,9 @@ function filteredColor(shoeColor){
         cardModal();
 
       }//if
-
     }//for j
   }//for i
 }//filteredBehaviour
-
-
 
 // ==========================================================
 // Display cards
@@ -348,10 +305,5 @@ function displayCards(j){
                           '</div>' +
                       '</div>'
                   ); //append ends here
-
-
   }; //displayCards
-
-
-
 }); //document.ready()
