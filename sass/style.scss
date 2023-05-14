@@ -14,13 +14,15 @@ $spacer: 2rem !default; //margin and padding overall spacing size
 
 // Custom.scss
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: black;
   max-width: 100%;
   overflow-x: hidden;
@@ -36,6 +38,31 @@ h1 {
 
 .card {
   cursor: pointer;
+  transition: all 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.banner {
+  background-image: url("../images/dark-puma.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-content h1 {
+  font-size: 70px;
 }
 
 .my-btns {
@@ -55,7 +82,7 @@ h1 {
   width: 100%;
   height: 120px;
   background: white;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 }
 
 .nav li {
@@ -75,16 +102,16 @@ h1 {
   color: black;
 }
 
-.logo-puma {  
-    background: url('../images/puma-logo2.png') no-repeat;
-    background-size: contain;
-    /* scales the image */
-    background-position: center;
-    /* centers the image */
-    margin-top: -20px;
-    margin-left: -51px;
-    width: 280px;
-    height: 120px;
+.logo-puma {
+  background: url('../images/puma-logo2.png') no-repeat;
+  background-size: contain;
+  /* scales the image */
+  background-position: center;
+  /* centers the image */
+  margin-top: -20px;
+  margin-left: -51px;
+  width: 280px;
+  height: 120px;
 }
 
 .card-text {
@@ -116,10 +143,10 @@ h1 {
 }
 
 .phonePuma {
-    width: 50%;
-    margin-left: 200px;
-    padding: 50px;
-    margin-top: 29px;
+  width: 50%;
+  margin-left: 200px;
+  padding: 50px;
+  margin-top: 29px;
 }
 
 .myImage {
@@ -129,15 +156,16 @@ h1 {
 
 .mySocials {
   border-radius: 10px;
-  width: 3%;
+  width: 2.5%;
   margin: 5px;
   padding: 5px;
   filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(89deg) brightness(106%) contrast(108%);
   text-decoration: none;
+  transition: all 1s;
 }
 
 .mySocials:hover {
-  filter: invert(55%) sepia(78%) saturate(1908%) hue-rotate(346deg) brightness(99%) contrast(100%);
+  transform: scale(1.1);
 }
 
 .paraTwo {
@@ -166,18 +194,57 @@ h1 {
 }
 
 // MEDIA QUARIES 
+// DESKTOP 4K 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2400px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .app-info {
+    margin-top: 95px;
+  }
+
+  .phonePuma {
+    margin-left: 439px;
+  }
+
+  .tools h4 {
+    margin-top: 150px;
+    font-size: 3rem;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+
+  .my-btns {
+    width: 245px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+}
+
 
 /* Extra small devices (phones, 820 and down) */
 @media only screen and (max-width: 820px) {
-    .phonePuma {
-      width: 81%;
-      margin-left: 129px;
-      margin-top: 75px;
+  .phonePuma {
+    width: 81%;
+    margin-left: 129px;
+    margin-top: 75px;
   }
 
   .start {
     margin-left: 0px;
-  }  
+  }
+
+  .mySocials {
+    width: 4%;
+  }
 }
 
 // small phones 600px and down
@@ -187,10 +254,6 @@ h1 {
     margin: 27px auto;
     display: block;
     margin-bottom: -61px;
-  }
-
-  .mySocials {
-    width: 10%;
   }
 
   .nav li {
@@ -207,6 +270,10 @@ h1 {
 
   .app-info {
     text-align: center;
+  }
+
+  .mySocials {
+    width: 8%;
   }
 }
 
