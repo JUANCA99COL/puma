@@ -53,33 +53,23 @@ h1 {
 
 .nav {
   width: 100%;
-  height: 120px;
+  height: 80px;
   background: white; }
 
 .nav li {
-  padding: 20px;
-  font-size: 40px; }
-
-.caption {
-  margin-left: auto;
-  margin-right: 20px;
-  margin-top: 10px;
-  font-family: 'Bebas Neue', cursive; }
+  padding: 20px; }
 
 .nav a {
   text-decoration: none;
   color: black; }
 
 .logo-puma {
-  background: url("../images/puma-logo2.png") no-repeat;
+  background: url(../images/puma-logo2.png) no-repeat;
   background-size: contain;
-  /* scales the image */
   background-position: center;
-  /* centers the image */
-  margin-top: -20px;
-  margin-left: -51px;
-  width: 280px;
-  height: 120px; }
+  width: 150px;
+  height: 80px;
+  margin-top: -15px; }
 
 .card-text {
   font-size: 20px;
@@ -194,9 +184,6 @@ h1 {
   .nav li {
     font-size: 36px; }
 
-  .logo-puma {
-    margin-left: -87px; }
-
   .row {
     --bs-gutter-x: 2.5rem; }
 
@@ -205,8 +192,3 @@ h1 {
 
   .mySocials {
     width: 8%; } }
-@media only screen and (max-width: 434px) {
-  .caption {
-    margin-top: -128px; } }
-
-/*# sourceMappingURL=style.css.map */
